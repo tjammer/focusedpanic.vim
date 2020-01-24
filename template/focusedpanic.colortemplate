@@ -32,7 +32,7 @@ Keyword           -> Statement
 Label             -> Statement
 Macro             -> PreProc
 Number            -> Constant
-Operator          -> Statement
+Operator          -> Normal
 PreCondit         -> PreProc
 Repeat            -> Statement
 SpecialChar       -> Special
@@ -46,11 +46,11 @@ Typedef           -> Type
 lCursor           -> Cursor
 cStorageClass     -> Statement
 cppModifier       -> Statement
-pythonOperator    -> Normal
 ALEWarning        -> WarningMsg
 ALEWarningSign    -> WarningMsg
 ALEError          -> ErrorMsg
 ALEErrorSign      -> ErrorMsg
+RubyDefine        -> Statement
 # }}}
 
 Background: dark
