@@ -57,23 +57,23 @@ Background: dark
 
 ; Color palette {{{
 ; Color name         GUI               Base256           Base16 (optional)
-Color: black         #0c151e           ~                 Black
-Color: red           #ff4143           ~                 DarkRed
-Color: green         #3de163           ~                 DarkGreen
-Color: yellow        #ffcc4b           ~                 DarkYellow
-Color: blue          #1094c3           ~                 DarkBlue
-Color: magenta       #7f4efe           ~                 DarkMagenta
-Color: cyan          #3abc9c           ~                 DarkCyan
-Color: white         #fefefe           ~                 LightGrey
-Color: brightblack   #17556f           ~                 DarkGrey
-Color: brightred     #ff4143           ~                 LightRed
-Color: brightgreen   #3de163           ~                 LightGreen
-Color: brightyellow  #ffcc4b           ~                 LightYellow
-Color: brightblue    #1094c3           ~                 LightBlue
-Color: brightmagenta #7f4efe           ~                 LightMagenta
-Color: brightcyan    #3abc9c           ~                 LightCyan
+Color: black         #0c151e           233               Black
+Color: red           #ff4143           203               DarkRed
+Color: green         #3de163           77                DarkGreen
+Color: yellow        #ffcc4b           221               DarkYellow
+Color: blue          #1094c3           31                DarkBlue
+Color: magenta       #7f4efe           99                DarkMagenta
+Color: cyan          #3abc9c           73                DarkCyan
+Color: white         #fefefe           15                LightGrey
+Color: brightblack   #17556f           23                DarkGrey
+Color: brightred     #ff4143           203               LightRed
+Color: brightgreen   #3de163           77                LightGreen
+Color: brightyellow  #ffcc4b           221               LightYellow
+Color: brightblue    #1094c3           31                LightBlue
+Color: brightmagenta #7f4efe           99                LightMagenta
+Color: brightcyan    #3abc9c           73                LightCyan
 ; You may use hexadecimal values, too, and you may provide an explicit base-256 color:
-Color: brightwhite   #0b2a37           231               White
+Color: brightwhite   #0b2a37           235               White
 ; }}}
 ; Terminal colors {{{
 Term colors: black red green yellow blue magenta cyan white
