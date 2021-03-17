@@ -1,20 +1,20 @@
-# vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2
+; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2
 
-# Information {{{
-# Mandatory
+; Information {{{
+; Mandatory
 Full name:     focusedpanic
 Short name:    focusedpanic
 Author:        Tobias Jammer <tobiasjammer@gmail.com>
 License:       MIT
-# Prefix for options: short name is used if this key is not present:
+; Prefix for options: short name is used if this key is not present:
 Option Prefix: dark
-# }}}
+; }}}
 
-# Documentation {{{
-Include: _help.colortemplate
-# }}}
+; Documentation {{{
+;Include: _help.colortemplate
+; }}}
 
-# Common linked groups {{{
+; Common linked groups {{{
 QuickFixLine      -> Search
 StatusLineTerm    -> StatusLine
 StatusLineTermNC  -> StatusLineNC
@@ -42,59 +42,59 @@ String            -> Constant
 Structure         -> Type
 Tag               -> Special
 Typedef           -> Type
-# See `:help lCursor`
+; See `:help lCursor`
 lCursor           -> Cursor
-cStorageClass     -> Statement
-cppModifier       -> Statement
+;cStorageClass     -> Statement
+;cppModifier       -> Statement
 ALEWarning        -> WarningMsg
 ALEWarningSign    -> WarningMsg
 ALEError          -> ErrorMsg
 ALEErrorSign      -> ErrorMsg
 RubyDefine        -> Statement
-# }}}
+; }}}
 
 Background: dark
 
-# Color palette {{{
-# Color name         GUI          Base256     Base16 (optional)
-Color: black         #0c151e        ~         Black
-Color: red           #ff4143        ~         DarkRed
-Color: green         #3de163        ~         DarkGreen
-Color: yellow        #ffcc4b        ~         DarkYellow
-Color: blue          #1094c3        ~         DarkBlue
-Color: magenta       #7f4efe        ~         DarkMagenta
-Color: cyan          #3abc9c        ~         DarkCyan
-Color: white         #fefefe        ~         LightGrey
-Color: brightblack   #17556f        ~         DarkGrey
-Color: brightred     #ff4143        ~         LightRed
-Color: brightgreen   #3de163        ~         LightGreen
-Color: brightyellow  #ffcc4b        ~         LightYellow
-Color: brightblue    #1094c3        ~         LightBlue
-Color: brightmagenta #7f4efe        ~         LightMagenta
-Color: brightcyan    #3abc9c        ~         LightCyan
-# You may use hexadecimal values, too, and you may provide an explicit base-256 color:
-Color: brightwhite   #0b2a37       231        White
-# }}}
-# Terminal colors {{{
+; Color palette {{{
+; Color name         GUI               Base256           Base16 (optional)
+Color: black         #0c151e           233               Black
+Color: red           #ff4143           203               DarkRed
+Color: green         #3de163           77                DarkGreen
+Color: yellow        #ffcc4b           221               DarkYellow
+Color: blue          #1094c3           31                DarkBlue
+Color: magenta       #7f4efe           99                DarkMagenta
+Color: cyan          #3abc9c           73                DarkCyan
+Color: white         #fefefe           15                LightGrey
+Color: brightblack   #17556f           23                DarkGrey
+Color: brightred     #ff4143           203               LightRed
+Color: brightgreen   #3de163           77                LightGreen
+Color: brightyellow  #ffcc4b           221               LightYellow
+Color: brightblue    #1094c3           31                LightBlue
+Color: brightmagenta #7f4efe           99                LightMagenta
+Color: brightcyan    #3abc9c           73                LightCyan
+; You may use hexadecimal values, too, and you may provide an explicit base-256 color:
+Color: brightwhite   #0b2a37           235               White
+; }}}
+; Terminal colors {{{
 Term colors: black red green yellow blue magenta cyan white
 Term colors: brightblack brightred brightgreen brightyellow
 Term colors: brightblue brightmagenta brightcyan brightwhite
-# }}}
+; }}}
 
-# Default highlight groups {{{
+; Default highlight groups {{{
 Variant: gui
-#if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
+;if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
 Variant: 256 8
-#if get(g:, '@optionprefix_transp_bg', 0)
+;if get(g:, '@optionprefix_transp_bg', 0)
 Variant: gui 256 8
     Normal           white             none
     Terminal         white             none
-#else
+;else
     Normal           white             black
     Terminal         white             black
-#endif
+;endif
 
-# Group              Foreground        Background        Attributes
+; Group              Foreground        Background        Attributes
 ColorColumn          fg                black
 Conceal              none              none
 Cursor               none              none              reverse
@@ -139,7 +139,7 @@ Visual               none              brightwhite
 VisualNOS            white             black
 WarningMsg           yellow            black
 WildMenu             yellow            black
-# Other conventional group names (see `:help group-name`)
+; Other conventional group names (see `:help group-name`)
 Comment              brightblack       none
 Constant             blue              none
 Error                white             black
@@ -151,22 +151,22 @@ Statement            green             none             bold
 Todo                 yellow            none             bold
 Type                 white             none             bold
 Underlined           white             none
-# See `:help CursorIM`
+; See `:help CursorIM`
 CursorIM             none              fg
-# See `:help window-toolbar`
+; See `:help window-toolbar`
 ToolbarLine          none              black
 ToolbarButton        white             black            bold
-# GitGutter did not work out of the box somehow
+; GitGutter did not work out of the box somehow
 GitGutterAdd         green             none
 GitGutterChange      yellow            none
 GitGutterDelete      red               none
 GitGutterChangeDelete yellow           none
-# }}}
+; }}}
 
-# Additional highlight groups {{{
-# Add additional highlight groups here if you want
-# }}}
+; Additional highlight groups {{{
+; Add additional highlight groups here if you want
+; }}}
 
-# B/W variant {{{
-Include: _bw.colortemplate
-# }}}
+; B/W variant {{{
+;Include: _bw.colortemplate
+; }}}
